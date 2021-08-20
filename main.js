@@ -12,7 +12,8 @@ request(url , getData);
 function getData(err , res , html){
     if(err){
         console.log(err);
-    }else if(res.statusCode == 404){
+    }
+    else if(res.statusCode == 404){
         console.log('Page not Found');
     }
     else{
